@@ -19,6 +19,7 @@ class CreatePemesanansTable extends Migration {
 			$table->string('gambar_pemesanan');
 			$table->string('alamat');
 			$table->string('telepon');
+			$table->string('email');
 			$table->string('pukul');
 			$table->string('hari');
 			$table->string('no_pesanan');

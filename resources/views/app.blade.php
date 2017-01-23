@@ -59,7 +59,7 @@
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
           <li class="dropdown messages-menu">
-           
+
             <ul class="dropdown-menu">
               <li class="header">You have 4 messages</li>
               <li>
@@ -131,10 +131,10 @@
               <li class="footer"><a href="#">See All Messages</a></li>
             </ul>
           </li>
-         
+
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
-            
+
             <ul class="dropdown-menu">
               <li class="header">You have 9 tasks</li>
               <li>
@@ -213,13 +213,13 @@
               <li class="user-header">
                 <img src="{{asset('/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
-                
+
               </li>
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            
+
           </li>
         </ul>
       </div>
@@ -245,11 +245,17 @@
         <li class="active treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Data Pemesanan</span></a>
-          
+
         </li>
         </ul>
-        
-        
+      <ul class="sidebar-menu">
+        <li class="active treeview">
+          <a href="{{ url('admin/pesanan/report') }}" target="_blank">
+            <i class="fa fa-dashboard"></i> <span>Report</span></a>
+
+        </li>
+        </ul>
+
     </section>
     <!-- /.sidebar -->
   </aside>
@@ -261,6 +267,16 @@
       <h1>
         Data Pemesanan
       </h1>
+  <form action="{{url('admin/pesanan/search')}}" method="get">
+  <div class="input-group margin">
+
+                <input type="text" class="form-control" name="cari">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-info btn-flat">Cari</button>
+                    </span>
+
+              </div>
+              </form>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>
@@ -273,10 +289,10 @@
           <!-- /.box (chat box) -->
 
           <!-- TO DO List -->
-         
+
           <!-- /.box -->
 
-          
+
                 <button type="button" class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
                 </button>
                 <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
@@ -287,7 +303,7 @@
             <!-- /.box-header -->
            <div style="background-color: #444;">
   <footer class="main-footer" style="background-color: #F39C12;">
-    <center><strong style="color: white;">Copyright &copy; 2014-2015. All rights reserved.</strong> </center>
+    <center><strong style="color: white;">Copyright &copy; 2016. All rights reserved.</strong> </center>
   </footer>
   </div>
 <!-- jQuery 2.2.0 -->

@@ -2,13 +2,14 @@
 @section('content')
 
 <script type="text/javascript">
-  function showData(no_pesanan,nama,alamat,telepon,hari,pukul,gambar,status) {
+  function showData(no_pesanan,email,nama,alamat,telepon,hari,pukul,gambar,status) {
     $('#nama-pesan').html(nama);
     $('#no_pesanan').html(no_pesanan);
     $('#alamat-pesan').html(alamat);
     $('#telp-pesan').html(telepon);
     $('#tanggal-pesan').html(hari);
     $('#pukul-pesan').html(pukul);
+    $('#email').html(email);
     $('#gambar-pesan').attr('src',gambar);
     $('#status').html(status);
   }
@@ -31,7 +32,7 @@
                     <tr>
                       <td><?php echo $i; $i++; ?></td>
                       <td>
-                          <a href="#" data-toggle="modal" data-target="#detail" style="text-decoration: none;" onclick="showData('{{ $pesanan->no_pesanan }}','{{ $pesanan->nama }}','{{ $pesanan->alamat }}','{{ $pesanan->telepon }}','{{ $pesanan->hari }}','{{ $pesanan->pukul }}','{{ url('images'.'/'.$pesanan->gambar_pemesanan) }}','{{ $pesanan->status }}')">{{$pesanan->nama}}</a>
+                          <a href="#" data-toggle="modal" data-target="#detail" style="text-decoration: none;" onclick="showData('{{ $pesanan->no_pesanan }}','{{ $pesanan->email }}', '{{ $pesanan->nama }}','{{ $pesanan->alamat }}','{{ $pesanan->telepon }}','{{ $pesanan->hari }}','{{ $pesanan->pukul }}','{{ url('images'.'/'.$pesanan->gambar_pemesanan) }}','{{ $pesanan->status }}')">{{$pesanan->nama}}</a>
                       </td>
                       <td>{{$pesanan->telepon}}</td>
                       <td>{{$pesanan->no_pesanan}}</td>
@@ -39,10 +40,10 @@
                       @if($pesanan->status=='pending')
                       PENDING
                       @else
-                      @if($pesanan->status=='rejected')
-                      REJECTED
-                      @elseif($pesanan->status=='accepted')
-                      ACCEPTED
+                      @if($pesanan->status=='DITOLAK')
+                      DITOLAK
+                      @elseif($pesanan->status=='DITERIMA')
+                      DITERIMA
                       @endif
                       @endif
                       </td>
@@ -58,8 +59,8 @@
                     </tr>
                 @endforeach
                 </tbody>
-          
               </table>
+
 
 <div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -88,6 +89,10 @@
                     <td id="telp-pesan"></td>
                 </tr>
                 <tr>
+                    <td>Email</td>
+                    <td id="email"></td>
+                </tr>
+                <tr>
                     <td>Pukul</td>
                     <td id="pukul-pesan"></td>
                 </tr>
@@ -110,5 +115,5 @@
       </div>
     </div>
   </div>
-</div>  
+</div>
 @endsection

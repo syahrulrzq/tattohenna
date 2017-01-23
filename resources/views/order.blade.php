@@ -36,6 +36,10 @@
                     <td id="telp-pesan"></td>
                 </tr>
                 <tr>
+                    <td>Email</td>
+                    <td id="email"></td>
+                </tr>
+                <tr>
                     <td>Pukul</td>
                     <td id="pukul-pesan"></td>
                 </tr>

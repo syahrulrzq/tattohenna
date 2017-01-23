@@ -211,6 +211,7 @@
                         $('#nama-pesan').html(data.order.nama);
                         $('#alamat-pesan').html(data.order.alamat);
                         $('#telp-pesan').html(data.order.telepon);
+                        $('#email').html(data.order.email);
                         $('#pukul-pesan').html(data.order.pukul);
                         $('#tanggal-pesan').html(data.order.hari);
                         $('#status').html(data.order.status);
