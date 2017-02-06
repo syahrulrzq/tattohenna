@@ -1,4 +1,20 @@
 @extends('app')
+
+@section('content-header')
+Data Pemesanan
+@endsection
+
+@section('content-2')
+<form action="{{url('admin/pesanan/search')}}" method="get">
+          <div class="input-group margin">
+                <input type="text" class="form-control" name="cari">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-info btn-flat">Cari</button>
+                    </span>
+              </div>
+              </form>
+@endsection
+
 @section('content')
 
 <script type="text/javascript">

@@ -243,15 +243,15 @@
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Data Pemesanan</span></a>
+          <a href="{{ url('admin/pesanan') }}">
+            <i class="fa fa-list"></i> <span>Data Pemesanan</span></a>
 
         </li>
         </ul>
       <ul class="sidebar-menu">
         <li class="active treeview">
-          <a href="{{ url('admin/pesanan/report') }}" target="_blank">
-            <i class="fa fa-dashboard"></i> <span>Report</span></a>
+          <a href="{{ url('admin/pesanan/bulan') }}">
+            <i class="fa fa-book"></i> <span>Report</span></a>
 
         </li>
         </ul>
@@ -265,18 +265,9 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Data Pemesanan
+        @yield('content-header')
       </h1>
-  <form action="{{url('admin/pesanan/search')}}" method="get">
-  <div class="input-group margin">
-
-                <input type="text" class="form-control" name="cari">
-                    <span class="input-group-btn">
-                      <button type="button" class="btn btn-info btn-flat">Cari</button>
-                    </span>
-
-              </div>
-              </form>
+        @yield('content-2')
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Dashboard</li>

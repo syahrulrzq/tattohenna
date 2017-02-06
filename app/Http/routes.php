@@ -22,6 +22,7 @@ Route::group(['prefix'=>'admin'], function(){
 		Route::get('pesanan/{id}/destroy','PesananController@destroy');
 		Route::get('pesanan/search','PesananController@search');
 		Route::get('pesanan/report','PesananController@report');
+		Route::get('pesanan/bulan','PesananController@bulan');
 });
 Route::get('order', 'OrderController@getOrder');
 Route::get('order/check', 'OrderController@checkOrder');

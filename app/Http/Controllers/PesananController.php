@@ -58,5 +58,9 @@ class PesananController extends Controller {
 		return $pdf->stream();
 	}
 
+ 	public function bulan()
+	{
+		return view ('bulan');
+	}
 
 }
