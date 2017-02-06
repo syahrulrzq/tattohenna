@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-<form class="" action="/admin/pesanan/report" method="get">
+<form class=""  method="get" onsubmit="window.open('report')">
   <div class="form-group">
     <label>Bulan</label>
     <select class="form-control" name="bulan">
