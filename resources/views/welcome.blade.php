@@ -8,12 +8,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Tatto Henna</title>
-<link href="master/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{url('master/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="master/js/jquery.min.js"></script>
+<script src="{{asset('master/js/jquery.min.js')}}"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="master/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="{{url('master/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,9 +23,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,700,500' rel='stylesheet' type='text/css'>
 <!--flexslider-->
-<link rel="stylesheet" href="master/css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{url('master/css/flexslider.css')}}" type="text/css" media="screen" />
 <!--//flexslider-->
-<link rel="stylesheet" href="master/css/lightbox.css">
+<link rel="stylesheet" href="{{url('master/css/lightbox.css')}}">
 
 
 </head>
@@ -36,14 +36,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!---->
 			<div class="header-logo">
 				<div class="logo">
-					<a href="/welcome"><img src="master/images/logo.png" alt="" ></a>
+					<a href="{{url('/welcome')}}"><img src="{{url('master/images/logo.png')}}" alt="" ></a>
 				</div>
 				<div class="top-nav">
-					<span class="icon"><img src="master/images/menu.png" alt=""> </span>
-					<ul><li><a href="/pesan" class="scroll" data-hover="Order ">Order </a></li>
+					<span class="icon"><img src="{{url('master/images/menu.png')}}" alt=""> </span>
+					<ul><li><a href="{{url('/pesan')}}" class="scroll" data-hover="Order ">Order </a></li>
 						<li><a href="#gallery" class="scroll" data-hover="Gallery" >Gallery</a></li>
-						<li><a href="/order" class="scroll" data-hover="Cek Order">Cek Order</a></li>
-						<li ><a href="/admin/pesanan" class="scroll" data-hover="Admin">Admin</a> </li
+						<li><a href="{{url('/order')}}" class="scroll" data-hover="Cek Order">Cek Order</a></li>
+						<li ><a href="{{url('/admin/pesanan')}}" class="scroll" data-hover="Admin">Admin</a> </li>
 					</ul>
 						<!--script-->
 						<script>
@@ -58,11 +58,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!---->
 				<div class="top-menu">					
 					<ul>
-						<li><a href="/pesan" class="scroll" data-hover="Order ">Order </a></li>
+						<li><a href="{{url('/pesan')}}" class="scroll" data-hover="Order ">Order </a></li>
 						<li><a href="#gallery" class="scroll" data-hover="Gallery" >Gallery</a></li>
-						<li><a href="/"><img src="master/images/logo.png" alt="" ></a></li>
-						<li><a href="/order" class="scroll" data-hover="Cek Order">Cek Order</a></li>
-						<li ><a href="/admin/pesanan" class="scroll" data-hover="Admin">Admin</a> </li>
+						<li><a href="{{url('/')}}"><img src="{{url('master/images/logo.png')}}" alt="" ></a></li>
+						<li><a href="{{url('/order')}}" class="scroll" data-hover="Cek Order">Cek Order</a></li>
+						<li ><a href="{{url('/admin/pesanan')}}" class="scroll" data-hover="Admin">Admin</a> </li>
 						
 						<div class="clearfix"></div>
 					</ul>
@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</section>
 							<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 												<!--FlexSlider-->
-									<script defer src="js/jquery.flexslider.js"></script>
+									<script defer src="{{url('js/jquery.flexslider.js')}}"></script>
 									<script type="text/javascript">
 											$(function(){
 												SyntaxHighlighter.all();
@@ -137,55 +137,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h3>Our Gallery</h3>
 			<div class="gallery-grids">				
 				<div class="col-md-4 port-grids view view-fourth">
-					<a class="example-image-link" href="master/images/b1.jpg" data-lightbox="example-set" data-title="">
-						<img src="master/images/b1.jpg" class="img-responsive" alt=""/>
+					<a class="example-image-link" href="{{url('master/images/b1.jpg')}}" data-lightbox="example-set" data-title="">
+						<img src="{{url('master/images/b1.jpg')}}" class="img-responsive" alt=""/>
 						<div class="mask">
 							<p>A wonderful serenity has taken possession of my which I enjoy with my whole heart.</p>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 port-grids view view-fourth">
-					<a class="example-image-link" href="master/images/b5.jpg" data-lightbox="example-set" data-title="">
-						<img src="master/images/b5.jpg" class="img-responsive" alt=""/>
+					<a class="example-image-link" href="{{url('master/images/b5.jpg')}}" data-lightbox="example-set" data-title="">
+						<img src="{{url('master/images/b5.jpg')}}" class="img-responsive" alt=""/>
 						<div class="mask">
 							<p>A wonderful serenity has taken possession of my which I enjoy with my whole heart.</p>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 port-grids view view-fourth">
-					<a class="example-image-link" href="master/images/b3.jpg" data-lightbox="example-set" data-title="">
-						<img src="master/images/b3.jpg" class="img-responsive" alt=""/>
+					<a class="example-image-link" href="{{url('master/images/b3.jpg')}}" data-lightbox="example-set" data-title="">
+						<img src="{{url('master/images/b3.jpg')}}" class="img-responsive" alt=""/>
 						<div class="mask">
 							<p>A wonderful serenity has taken possession of my which I enjoy with my whole heart.</p>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 port-grids view view-fourth">
-					<a class="example-image-link" href="master/images/b4.jpg" data-lightbox="example-set" data-title="">
-						<img src="master/images/b4.jpg" class="img-responsive" alt=""/>
+					<a class="example-image-link" href="{{url('master/images/b4.jpg')}}" data-lightbox="example-set" data-title="">
+						<img src="{{url('master/images/b4.jpg')}}" class="img-responsive" alt=""/>
 						<div class="mask">
 							<p>A wonderful serenity has taken possession of my which I enjoy with my whole heart.</p>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 port-grids view view-fourth">
-					<a class="example-image-link" href="master/images/b2.jpg" data-lightbox="example-set" data-title="">
-						<img src="master/images/b2.jpg" class="img-responsive" alt=""/>
+					<a class="example-image-link" href="{{url('master/images/b2.jpg')}}" data-lightbox="example-set" data-title="">
+						<img src="{{url('master/images/b2.jpg')}}" class="img-responsive" alt=""/>
 						<div class="mask">
 							<p>A wonderful serenity has taken possession of my which I enjoy with my whole heart.</p>
 						</div>
 					</a>
 				</div>
 				<div class="col-md-4 port-grids view view-fourth">
-					<a class="example-image-link" href="master/images/b6.jpg" data-lightbox="example-set" data-title="">
-						<img src="master/images/b6.jpg" class="img-responsive" alt=""/>
+					<a class="example-image-link" href="{{url('master/images/b6.jpg')}}" data-lightbox="example-set" data-title="">
+						<img src="{{url('master/images/b6.jpg')}}" class="img-responsive" alt=""/>
 						<div class="mask">
 							<p>A wonderful serenity has taken possession of my which I enjoy with my whole heart.</p>
 						</div>
 					</a>
 				</div>
 				<div class="clearfix"> </div>	
-				<script src="js/lightbox-plus-jquery.min.js"> </script>
+				<script src="{{asset('js/lightbox-plus-jquery.min.js')}}"> </script>
 			</div>				
 		</div>
 	</div>	
@@ -245,8 +245,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
 <!--//copy-->
-<script type="text/javascript" src="js/move-top.js"></script>
-       <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="{{asset('js/move-top.js')}}"></script>
+       <script type="text/javascript" src="{{asset('js/easing.js')}}"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		

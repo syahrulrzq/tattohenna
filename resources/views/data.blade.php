@@ -64,10 +64,10 @@ Data Pemesanan
                       @endif
                       </td>
                       <td>
-                      <a href="/admin/pesanan/{{$pesanan->id}}/destroy" onclick="return confirm('Apakah anda yakin ingin menyetujui pesanan?')" class="btn btn-primary">Hapus</a>
+                      <a href="{{url('admin/pesanan/'.$pesanan->id.'/destroy')}}" onclick="return confirm('Apakah anda yakin ingin menyetujui pesanan?')" class="btn btn-primary">Hapus</a>
                         @if($pesanan->status=='pending')
-                      <a href="/admin/pesanan/{{$pesanan->id}}/reject" onclick="return confirm('Apakah anda yakin ingin menolak pesanan?')" class="btn btn-danger">Tolak</a>
-                      <a href="/admin/pesanan/{{$pesanan->id}}/accept" onclick="return confirm('Apakah anda yakin ingin menyetujui pesanan?')" class="btn btn-primary">Terima</a>
+                      <a href="{{url('admin/pesanan/'.$pesanan->id.'/reject')}}" onclick="return confirm('Apakah anda yakin ingin menolak pesanan?')" class="btn btn-danger">Tolak</a>
+                      <a href="{{url('admin/pesanan/'.$pesanan->id.'/accept')}}" onclick="return confirm('Apakah anda yakin ingin menyetujui pesanan?')" class="btn btn-primary">Terima</a>
 
                       @else
                       @endif
