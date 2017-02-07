@@ -13,7 +13,7 @@
       // formData = new FormData($('#modal_form')[0]);
       e.preventDefault();
       $.ajax({
-        url: '{{ url('pesan/store') }}',
+        url: '{{url('pesan/store')}}',
         type: 'POST',
         data: $('#modal_form').serializeArray(),
         success:function(data){
