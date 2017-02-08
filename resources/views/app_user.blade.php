@@ -44,7 +44,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a href="{{url('/')}}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>T</b>HN</span>
       <!-- logo for regular state and mobile devices -->
@@ -201,7 +201,7 @@
         $('#form_check').submit(function(e){
             e.preventDefault();
             $.ajax({
-                url: '/order/check?no_pesanan='+$('#no_pesanan').val(),
+                url: '{{url('/order/check?no_pesanan=')}}'+$('#no_pesanan').val(),
                 type: 'get',
                 data: $('#form_check').serializeArray(),
                 success:function(data){
@@ -215,7 +215,7 @@
                         $('#pukul-pesan').html(data.order.pukul);
                         $('#tanggal-pesan').html(data.order.hari);
                         $('#status').html(data.order.status);
-                        $('#gambar').attr('src','/images/'+data.order.gambar_pemesanan);
+                        $('#gambar').attr('src','{{url('/images')}}/'+data.order.gambar_pemesanan);
                     }
 
                     else{

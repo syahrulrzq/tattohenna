@@ -124,7 +124,7 @@ class PemesananController extends Controller {
 			$a->Host = "smtp.gmail.com";
 			$a->Port = 587;
 			$a->Username = "aroeljhonsons@gmail.com";
-			$a->Password = "aroel632";
+			$a->Password = "iwhjrgbsceyhimxa";
 			$a->SetFrom("admin@tatto.com", "Admin");
 			$a->Subject = $subject;
 			$a->MsgHTML($message);

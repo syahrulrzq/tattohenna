@@ -205,7 +205,7 @@
           </li>
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="/auth/logout" class="dropdown-toggle">
+            <a href="{{url('/auth/logout')}}" class="dropdown-toggle">
               <span class="hidden-xs">Logout</span>
             </a>
             <ul class="dropdown-menu">
